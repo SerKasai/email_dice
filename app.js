@@ -29,3 +29,31 @@ else {
 
 console.log(email, emailUser)
 
+// Esercizio Dadi
+
+const numeriDado = [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+]
+
+console.log(numeriDado)
+
+let userDice = Math.floor(Math.random() * (7 - 1) + 1);
+console.log(userDice)
+
+let botDice = Math.floor(Math.random() * (7 - 1) + 1);
+console.log(botDice)
+
+if (userDice > botDice) {
+  alert('Hai vinto!')
+}
+else if (userDice < botDice) {
+  alert('Hai perso...')
+}
+else if (userDice = botDice) {
+  alert('Pareggio')
+}
